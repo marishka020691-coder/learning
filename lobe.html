@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take the Lobe tour. Build your first machine learning model in ten minutes. No code or experience required.">
+  <title>Lobe — Tour</title>
+  <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="lobe.css?v=menu-4">
+  <script src="lobe.js?v=menu-4" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#tour">Skip to the tour</a>
+
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="lobe-mark" viewBox="0 0 34 34">
+      <rect x="1" y="1" width="22" height="22" rx="6" fill="#04ddb2"/>
+      <rect x="12" y="12" width="21" height="21" rx="6" fill="#f34747"/>
+      <path d="M18 12h5v5a6 6 0 0 1-6 6h-5v-5a6 6 0 0 1 6-6Z" fill="#333333"/>
+    </symbol>
+    <symbol id="twitter-icon" viewBox="0 0 24 24">
+      <path d="M22 5.9a8.2 8.2 0 0 1-2.35.65 4.1 4.1 0 0 0 1.8-2.27 8.2 8.2 0 0 1-2.6.99 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.28 4.1 4.1 0 0 0 1.27 5.47 4.08 4.08 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.29 4.02 4.13 4.13 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 2 18.38a11.6 11.6 0 0 0 6.28 1.84c7.54 0 11.66-6.24 11.66-11.65l-.01-.53A8.3 8.3 0 0 0 22 5.9Z"/>
+    </symbol>
+    <symbol id="chat-icon" viewBox="0 0 24 24">
+      <path d="M12 2a9.5 9.5 0 0 0-8.31 14.11L2 22l5.89-1.69A9.5 9.5 0 1 0 12 2Z"/>
+    </symbol>
+    <symbol id="youtube-icon" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M21.6 6.2a2.8 2.8 0 0 0-1.97-1.98C17.88 3.75 12 3.75 12 3.75s-5.88 0-7.63.47A2.8 2.8 0 0 0 2.4 6.2 29.2 29.2 0 0 0 1.93 12c0 1.95.16 3.88.47 5.8a2.8 2.8 0 0 0 1.97 1.98c1.75.47 7.63.47 7.63.47s5.88 0 7.63-.47a2.8 2.8 0 0 0 1.97-1.98c.31-1.92.47-3.85.47-5.8 0-1.95-.16-3.88-.47-5.8ZM10 15.75v-7.5L16.5 12 10 15.75Z" clip-rule="evenodd"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="lobe.html" aria-label="Lobe home">
+      <span class="brand-word">lobe</span>
+      <svg class="brand-mark" aria-hidden="true"><use href="#lobe-mark"/></svg>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/" target="_blank" rel="noopener noreferrer" title="Open the archived Lobe overview">Overview</a>
+      <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/examples" target="_blank" rel="noopener noreferrer" title="Open the archived Lobe examples">Examples</a>
+      <a class="active" href="#tour" aria-current="page">Tour</a>
+      <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/blog" target="_blank" rel="noopener noreferrer" title="Open the archived Lobe blog">Blog</a>
+      <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/docs/welcome/welcome" target="_blank" rel="noopener noreferrer" title="Open the archived Lobe help">Help</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="download-button" href="https://github.com/lobe" target="_blank" rel="noopener noreferrer" title="Open the official Lobe project archive">Download</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav" hidden>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="tour-section" id="tour" aria-labelledby="tour-title">
+      <div class="tour-heading">
+        <h1 id="tour-title">Lobe <span>Tour</span></h1>
+        <p>Build your first machine learning model in ten<br class="description-break"> minutes. No code or experience required.</p>
+      </div>
+
+      <!-- The original poster already includes the round play icon. -->
+      <button class="video-launcher" id="open-video" type="button" aria-haspopup="dialog" aria-controls="tour-video-dialog" aria-label="Play the Lobe tour video">
+        <img src="assets/lobe/tour-poster.jpg" alt="California Plants project in Lobe, showing labelled plant images and training results" width="2000" height="1126" fetchpriority="high" decoding="async">
+      </button>
+    </section>
+
+    <section class="download-section" aria-labelledby="download-title">
+      <h2 id="download-title">Train your app<br>with Lobe</h2>
+      <a class="download-button download-button-large" href="https://github.com/lobe" target="_blank" rel="noopener noreferrer" title="Open the official Lobe project archive">Download</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="lobe.html" aria-label="Lobe home">
+          <span class="brand-word">lobe</span>
+          <svg class="brand-mark" aria-hidden="true"><use href="#lobe-mark"/></svg>
+        </a>
+        <div class="footer-copyright">
+          <p>A product by Microsoft.</p>
+          <p>All rights reserved.</p>
+          <p>© Microsoft 2021</p>
+        </div>
+      </div>
+
+      <nav class="footer-column" aria-labelledby="footer-about">
+        <h2 id="footer-about">About</h2>
+        <a href="https://github.com/lobe" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/" target="_blank" rel="noopener noreferrer">Overview</a>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/examples" target="_blank" rel="noopener noreferrer">Examples</a>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/blog" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+
+      <nav class="footer-column" aria-labelledby="footer-general">
+        <h2 id="footer-general">General</h2>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/NOTICE.txt" target="_blank" rel="noopener noreferrer">Notice</a>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/license" target="_blank" rel="noopener noreferrer">License</a>
+        <a href="https://news.microsoft.com/microsoft-public-relations-contacts/" target="_blank" rel="noopener noreferrer">Press Inquiry</a>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/assets/press/lobe-press-images.zip" target="_blank" rel="noopener noreferrer">Press Images</a>
+      </nav>
+
+      <nav class="footer-column" aria-labelledby="footer-resources">
+        <h2 id="footer-resources">Resources</h2>
+        <a href="https://web.archive.org/web/20221115192806/https://www.lobe.ai/docs/welcome/welcome" target="_blank" rel="noopener noreferrer">Help</a>
+        <a href="#tour">Tour</a>
+        <a href="mailto:lobeai@microsoft.com">Contact</a>
+        <a href="https://go.microsoft.com/fwlink/?LinkId=521839" target="_blank" rel="noopener noreferrer">Privacy</a>
+      </nav>
+
+      <nav class="social-links" aria-label="Lobe on social media">
+        <a href="https://reddit.com/r/lobe" target="_blank" rel="noopener noreferrer" aria-label="Lobe community chat on Reddit"><svg class="chat-icon" aria-hidden="true"><use href="#chat-icon"/></svg></a>
+        <a href="https://twitter.com/lobe_ai" target="_blank" rel="noopener noreferrer" aria-label="Lobe on Twitter"><svg aria-hidden="true"><use href="#twitter-icon"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCYryctkBIcCszPAFg79rwAw" target="_blank" rel="noopener noreferrer" aria-label="Lobe on YouTube"><svg aria-hidden="true"><use href="#youtube-icon"/></svg></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- The YouTube iframe is created only when the video is opened. -->
+  <dialog class="video-dialog" id="tour-video-dialog" aria-labelledby="video-dialog-title">
+    <div class="video-toolbar">
+      <h2 id="video-dialog-title">Introducing Lobe</h2>
+      <a class="youtube-link" href="https://www.youtube.com/watch?v=Mdcw3Sb98DA" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">↗</span></a>
+      <button class="close-video" id="close-video" type="button" aria-label="Close video" autofocus>×</button>
+    </div>
+    <div class="video-mount" id="video-mount"></div>
+  </dialog>
+</body>
+</html>

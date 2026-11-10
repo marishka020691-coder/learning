@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/backstage/roboto.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+/* The first screen uses the turquoise colour from the exercise. */
+:root {
+  --page-color: #00c1b5;
+  --ink: #333;
+  --white: #fff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
+body { margin: 0; background: var(--page-color); color: var(--ink); font-family: 'Roboto', Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.js body { transition: background-color 450ms ease; }
+a { color: inherit; text-underline-offset: 3px; touch-action: manipulation; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 5px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip-link { position: fixed; top: 12px; left: 16px; z-index: 50; padding: 12px 16px; transform: translateY(-160%); background: var(--white); color: var(--ink); }
+.skip-link:focus { transform: translateY(0); }
+
+/* The name, email, description and issue list stay in place on desktop. */
+.page-header { position: fixed; inset: 0 0 auto; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px; }
+.brand { display: block; flex: 0 0 auto; line-height: 0; }
+.brand img { display: block; width: 260px; height: auto; }
+.contact { font-size: 18px; font-weight: 700; line-height: 1.4; text-decoration: none; }
+.contact:hover { text-decoration: underline; }
+
+.issue-nav { position: fixed; right: 20px; bottom: 20px; z-index: 20; text-align: right; }
+.issue-nav ul { margin: 0; padding: 0; list-style: none; }
+.issue-nav a { display: inline-flex; align-items: center; justify-content: flex-end; min-height: 33px; font-size: 18px; font-weight: 400; text-decoration: none; }
+.issue-nav a[aria-current="location"] { font-weight: 700; }
+.issue-nav a:hover { text-decoration: underline; }
+
+.page-about { position: fixed; left: 20px; bottom: 20px; z-index: 10; width: 320px; }
+.description { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.4; }
+.copyright { margin: 8px 0 0; font-size: 12px; line-height: 1.6; }
+.privacy { display: inline-block; margin-top: 22px; font-size: 18px; font-weight: 700; line-height: 1.4; }
+
+/* Native scrolling and anchors work without a scrolling library. */
+.issue {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: 72px 360px 70px;
+  scroll-snap-align: start;
+  background: var(--issue-color);
+}
+.js .issue { background: transparent; }
+.issue-figure { width: 100%; margin: 0; text-align: center; transition: opacity 350ms ease, transform 450ms ease; }
+.js .issue:not(.is-active) .issue-figure { opacity: .35; transform: translateY(16px); }
+.cover {
+  display: block;
+  width: min(420px, max(158px, calc((100svh - 280px) * 840 / 1064)));
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+figcaption h2 { margin: 0; font-size: 18px; font-weight: 700; line-height: 25px; }
+.buy-line { margin: 12px 0 15px; font-size: 15px; font-weight: 700; line-height: 22px; }
+.stores-line { margin: 0; font-size: 15px; font-weight: 700; line-height: 22px; }
+.buy-line a, .stores-line a { color: var(--white); text-decoration: none; }
+.buy-line a:hover, .stores-line a:hover { text-decoration: underline; }
+
+@media (max-width: 1250px) {
+  .page-about { width: 285px; }
+  .issue { padding-inline: 305px; }
+}
+@media (max-width: 1100px) {
+  .page-header { background: var(--page-color); transition: background-color 450ms ease; }
+  .issue { padding-inline: 120px; }
+  .page-about { position: static; width: min(360px, calc(100% - 40px)); margin: 0 auto; padding: 40px 0 70px; scroll-snap-align: end; }
+}
+@media (max-width: 700px) {
+  .page-header { gap: 16px; }
+  .brand img { width: 220px; }
+  .contact { font-size: 15px; }
+  .issue { padding: 90px 20px 78px; }
+  .issue-nav { right: 0; bottom: 0; left: 0; padding: 6px 16px max(6px, env(safe-area-inset-bottom)); background: var(--page-color); transition: background-color 450ms ease; }
+  .issue-nav ul { display: flex; align-items: center; justify-content: center; gap: 12px; }
+  .issue-nav a { justify-content: center; min-height: 44px; font-size: 15px; white-space: nowrap; }
+  .page-about { padding-bottom: 100px; }
+}
+@media (max-width: 600px) {
+  .page-header { display: grid; grid-template-columns: 1fr; gap: 10px; padding: 18px 20px 12px; }
+  .brand img { width: 210px; }
+  .contact { justify-self: end; font-size: 14px; }
+  .issue { padding-top: 96px; }
+}
+@media (max-width: 360px) {
+  .page-header { padding-inline: 16px; }
+  .brand img { width: 195px; }
+  .issue { padding-inline: 12px; }
+  .issue-nav ul { gap: 10px; }
+  .issue-nav a { font-size: 14px; }
+  .description { font-size: 17px; }
+}
+@media (max-height: 520px) {
+  .page-header { position: absolute; }
+  .issue { min-height: 620px; }
+  .cover { width: 300px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; scroll-snap-type: none; }
+  *, *::before, *::after { transition: none !important; }
+  .js .issue:not(.is-active) .issue-figure { opacity: 1; transform: none; }
+}

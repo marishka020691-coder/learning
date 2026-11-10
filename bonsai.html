@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare the Workflow and Workflow Plus plans on this Bonsai pricing page.">
+  <title>Bonsai — Plans &amp; Pricing</title>
+  <link rel="stylesheet" href="bonsai.css?v=yearly-offer-1">
+  <script src="bonsai.js?v=original-pricing-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#pricing">Skip to pricing</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="bonsai.html" aria-label="Bonsai home">
+        <img class="logo-image" src="assets/bonsai-logo.svg" alt="bonsai" width="150" height="31">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation" hidden>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <details class="nav-dropdown">
+          <summary>Product <span class="chevron" aria-hidden="true"></span></summary>
+          <div class="dropdown-panel">
+            <span class="dropdown-kicker">YOUR WORK, IN ONE PLACE</span>
+            <button type="button" data-preview="projects"><strong>Project management</strong><span>A place for your clients and projects.</span></button>
+            <button type="button" data-preview="invoices"><strong>Invoicing &amp; payments</strong><span>Make room for the work that matters.</span></button>
+            <button type="button" data-preview="time"><strong>Task &amp; time tracking</strong><span>A little more clarity in your day.</span></button>
+          </div>
+        </details>
+        <details class="nav-dropdown">
+          <summary>Templates <span class="chevron" aria-hidden="true"></span></summary>
+          <div class="dropdown-panel templates-panel">
+            <span class="dropdown-kicker">A SIMPLE STARTING POINT</span>
+            <button type="button" data-preview="proposal"><strong>Proposal template</strong><span>Start with a clear project outline.</span></button>
+            <button type="button" data-preview="contract"><strong>Contract template</strong><span>A place for the important details.</span></button>
+            <button type="button" data-preview="invoice"><strong>Invoice template</strong><span>Keep your payment details together.</span></button>
+          </div>
+        </details>
+        <a class="nav-link" href="#pricing" aria-current="page">Pricing</a>
+        <button class="nav-link" type="button" data-preview="reviews">Reviews</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="button button-outline" type="button" data-preview="login">Log in</button>
+        <a class="button button-green" href="#plans">Start free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing-heading">
+        <h1 id="pricing-title">Plans &amp; Pricing</h1>
+        <div class="billing-control" aria-label="Choose a billing period">
+          <div class="billing-offer" id="yearly-offer">
+            <span>2 MONTHS FREE!</span>
+            <svg class="offer-arrow" viewBox="0 0 32 48" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M4 3C30 8 29 27 9 41" stroke-dasharray="3 5"/>
+              <path d="m9 35-1 7 7-2"/>
+            </svg>
+          </div>
+          <span class="monthly-label" id="monthly-label">MONTHLY</span>
+          <button class="billing-switch" id="billing-switch" type="button" role="switch" aria-checked="false" aria-label="Yearly billing" aria-describedby="yearly-offer">
+            <span class="switch-thumb" aria-hidden="true"></span>
+          </button>
+          <span class="yearly-label" id="yearly-label">YEARLY</span>
+        </div>
+      </div>
+
+      <!-- Monthly prices come from the brief. Yearly prices can be added later. -->
+      <div class="plans-grid" id="plans">
+        <article class="plan-card" aria-labelledby="workflow-title">
+          <h2 id="workflow-title">Workflow</h2>
+          <div class="price-block">
+            <div class="price-line"><span class="currency" aria-hidden="true">$</span><span class="price-amount" data-monthly="19">19</span><span class="price-period">/MONTH</span></div>
+            <p class="billing-note">Billed monthly</p>
+          </div>
+          <ul class="features">
+            <li>Unlimited Clients &amp; Projects</li>
+            <li>Proposals</li>
+            <li>Contracts</li>
+            <li>Invoicing &amp; Payments</li>
+            <li>Client CRM</li>
+            <li>Project Management</li>
+            <li>Task &amp; Time Tracking</li>
+            <li>iOS, Android, Chrome, &amp; Mac Apps</li>
+          </ul>
+          <button class="button button-green plan-cta" type="button" data-plan="workflow">START FREE</button>
+        </article>
+
+        <article class="plan-card featured-plan" aria-labelledby="workflow-plus-title">
+          <div class="ribbon-corner"><span class="popular-ribbon">MOST POPULAR</span></div>
+          <h2 id="workflow-plus-title">Workflow Plus</h2>
+          <div class="price-block">
+            <div class="price-line"><span class="currency" aria-hidden="true">$</span><span class="price-amount" data-monthly="29">29</span><span class="price-period">/MONTH</span></div>
+            <p class="billing-note">Billed monthly</p>
+          </div>
+          <ul class="features">
+            <li>Everything in Workflow, plus...</li>
+            <li>White-labelled client experience</li>
+            <li>Client forms and questionnaires <span class="new-badge">New</span></li>
+            <li>Workflow automations</li>
+            <li>Subcontracting (client-mode)</li>
+            <li>Calendly integration</li>
+            <li>Client portal</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="button button-green plan-cta" type="button" data-plan="workflow-plus">START FREE</button>
+        </article>
+      </div>
+      <p class="billing-status" id="billing-status" role="status" aria-live="polite">Monthly billing selected.</p>
+    </section>
+
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <span class="section-eyebrow">A LITTLE MORE CLARITY</span>
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <!-- These expandable questions are accordions. Their text can be replaced later. -->
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is included in each plan?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Workflow includes the features listed in the first card. Workflow Plus includes everything in Workflow, along with the extra features listed in the second card.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I switch between monthly and yearly billing?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Use the switch above the plans to change the billing period. Monthly prices are shown now; yearly prices will be added later.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Where can I explore the templates?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Open Templates in the navigation and choose a proposal, contract, or invoice to see a sample outline.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I choose a plan?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <div class="faq-answer"><p>Select Start free under the plan you want to preview. This practice page shows your selection; it does not create an account or take a payment.</p></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="bonsai.html">bonsai</a>
+    <p>A pricing-page study. Made one detail at a time.</p>
+    <a href="#faq">Questions? Start here <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <button class="dialog-close" type="button" aria-label="Close preview" autofocus>×</button>
+    <span class="section-eyebrow">BONSAI / A CLOSER LOOK</span>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <div id="dialog-content"></div>
+    <button class="button button-outline dialog-back" type="button">Back to pricing</button>
+  </dialog>
+</body>
+</html>

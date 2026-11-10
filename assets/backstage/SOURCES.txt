@@ -1,0 +1,24 @@
+Backstage Talks practice page
+
+Original website and cover artwork, retrieved 2026-11-05:
+https://backstagetalks.com/
+https://backstagetalks.com/img/logo.png
+https://backstagetalks.com/img/backstagetalks_cover_issue_5.png
+https://backstagetalks.com/img/backstagetalks_cover_issue_4.png
+https://backstagetalks.com/img/backstagetalks_cover_issue_3.png
+https://backstagetalks.com/img/backstagetalks_cover2017.png
+https://backstagetalks.com/img/backstagetalks_cover2016_n.png
+
+The practice page recreates the five-issue layout and 2021 credit supplied
+by the user. It is a local learning exercise, not the official magazine site.
+Cover artwork and the logo belong to their respective owners.
+
+Purchase links for issues 5 and 2 follow the official website's shop links.
+The older issues link to searches in the same shop; availability may vary.
+Store and privacy links open the official magazine website.
+
+Typeface: Roboto, downloaded from Google Fonts and stored locally.
+https://fonts.googleapis.com/css2?family=Roboto:wght@400..700&display=swap
+https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2
+https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt
+See Roboto-OFL.txt for the SIL Open Font License.

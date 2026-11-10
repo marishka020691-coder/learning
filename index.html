@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <title>Учебные страницы</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 64px 24px; color: #30352d; background: #f7f5ef; font: 16px/1.6 "Segoe UI", Arial, sans-serif; }
+    main { max-width: 900px; margin: auto; }
+    h1 { margin: 0 0 12px; font: 400 clamp(32px, 6vw, 52px)/1.15 Georgia, serif; }
+    .intro { color: #626b59; margin: 0 0 32px; }
+    .pages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .page { display: block; padding: 24px; border: 1px solid #d0d5c7; color: inherit; text-decoration: none; background: #fffdf8; }
+    .page strong { display: block; font: 400 27px/1.2 Georgia, serif; margin-bottom: 10px; }
+    .page span { color: #626b59; }
+    .page:hover { border-color: #4b5141; background: #edf0e5; }
+    :focus-visible { outline: 2px solid #4b5141; outline-offset: 4px; }
+    .preview { display: inline-block; margin-top: 28px; padding: 12px 20px; color: #fff; background: #4b5141; text-decoration: none; }
+    .note { margin-top: 32px; color: #626b59; font-size: 13px; }
+    @media (max-width: 560px) { body { padding: 32px 18px; } .pages { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Учебные страницы</h1>
+    <p class="intro">Четыре упражнения по вёрстке. Каждая страница открывается отдельно.</p>
+    <nav class="pages" aria-label="Выбрать страницу">
+      <a class="page" href="abstract.html"><strong>Abstract ↗</strong><span>Справочный центр с поиском и разделами помощи.</span></a>
+      <a class="page" href="backstage.html"><strong>Backstage Talks ↗</strong><span>Журналы и смена цвета при прокрутке.</span></a>
+      <a class="page" href="bonsai.html"><strong>Bonsai ↗</strong><span>Страница тарифов. Сохранённый черновик.</span></a>
+      <a class="page" href="lobe.html"><strong>Lobe ↗</strong><span>Страница Tour с видео и анимацией меню.</span></a>
+    </nav>
+    <a class="preview" href="preview.html">Превью: компьютер / планшет / телефон</a>
+    <p class="note">Учебные работы по референсам. Названия и материалы принадлежат их владельцам.</p>
+  </main>
+</body>
+</html>

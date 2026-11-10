@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find a little help with your Abstract account, designs, teams, and more.">
+  <title>Abstract | Help Center</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#help-topics">Skip to help topics</a>
+
+  <!-- Reusable, locally drawn icons. -->
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="abstract-mark" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="12" fill="currentColor"/>
+      <path d="M11 14h13a7 7 0 0 1 0 14H13V18h9a3 3 0 0 1 0 6h-5" fill="none" stroke="var(--mark-ink, #000)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M4 12h16m-7-7 7 7-7 7"/>
+    </symbol>
+    <symbol id="branches-icon" viewBox="0 0 96 96">
+      <path d="m12 62 36-19 36 19-36 20Z" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="m12 47 36-19 36 19-36 20Z" fill="var(--white)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="m12 32 36-19 36 19-36 20Z" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="m38 31 8 5 13-7" fill="none" stroke="var(--purple)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M48 52v15m0 5v9" stroke="currentColor" stroke-width="2.5"/>
+    </symbol>
+    <symbol id="account-icon" viewBox="0 0 96 96">
+      <circle cx="49" cy="46" r="34" fill="var(--lavender)"/>
+      <circle cx="47" cy="30" r="13" fill="var(--white)" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M22 76V65a25 25 0 0 1 50 0v11Z" fill="var(--white)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="73" cy="69" r="12" fill="var(--purple)"/>
+      <path d="m68 69 3 3 6-7" fill="none" stroke="var(--white)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="teams-icon" viewBox="0 0 96 96">
+      <path d="M12 37h72v46H12Z" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M12 49h72M29 37V22h38v15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="48" cy="23" r="10" fill="var(--white)" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M32 48v-5a16 16 0 0 1 32 0v5" fill="var(--white)" stroke="currentColor" stroke-width="2.5"/>
+      <rect x="39" y="58" width="18" height="13" rx="3" fill="var(--purple)"/>
+    </symbol>
+    <symbol id="billing-icon" viewBox="0 0 96 96">
+      <path d="m25 16 53 11-12 58-53-11Z" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <rect x="17" y="31" width="68" height="45" rx="6" fill="var(--white)" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M18 44h66" stroke="currentColor" stroke-width="7"/>
+      <path d="M28 61h15m-15 6h9" stroke="var(--purple)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="71" cy="63" r="5" fill="var(--lavender)"/>
+    </symbol>
+    <symbol id="key-icon" viewBox="0 0 96 96">
+      <circle cx="34" cy="35" r="23" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="31" cy="32" r="8" fill="var(--white)" stroke="currentColor" stroke-width="2.5"/>
+      <path d="m49 51 30 30 9-9-8-8 5-5-10-10-5 5-11-11" fill="var(--purple)" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="m53 55 22 22" stroke="var(--white)" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="support-icon" viewBox="0 0 96 96">
+      <path d="M33 35h48v34H66L54 81V69H33Z" fill="var(--lavender)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M12 15h59v39H37L22 68V54H12Z" fill="var(--white)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="29" cy="35" r="3" fill="var(--purple)"/>
+      <circle cx="42" cy="35" r="3" fill="var(--purple)"/>
+      <circle cx="55" cy="35" r="3" fill="var(--purple)"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="abstract.html" aria-label="Abstract Help Center home">
+        <svg class="brand-mark" aria-hidden="true"><use href="#abstract-mark"/></svg>
+        <span class="brand-name">Abstract</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-section">Help Center</span>
+      </a>
+      <nav class="header-actions" aria-label="Account and support">
+        <button class="button button-request" type="button" data-action="request">Submit a request</button>
+        <button class="button button-signin" type="button" data-action="signin">Sign in</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title">How can we help?</h1>
+        <form class="search-form" role="search">
+          <label class="visually-hidden" for="help-search">Search help topics</label>
+          <input id="help-search" name="q" type="search" placeholder="Search" autocomplete="off" aria-controls="help-topics">
+          <button class="search-submit" type="submit" aria-label="Search help topics">
+            <svg class="arrow-icon" aria-hidden="true"><use href="#arrow"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Six topics: two columns on desktop, one on a small screen. -->
+    <section class="topics-section" aria-label="Browse help topics">
+      <p class="search-status" id="search-status" role="status" hidden></p>
+      <div class="topics-grid" id="help-topics" tabindex="-1">
+        <article class="topic" id="branches" data-search="branches designs version document files">
+          <svg class="topic-icon" aria-hidden="true"><use href="#branches-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Branches</h2>
+            <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
+            <button class="text-link learn-more" type="button" data-topic="branches" aria-label="Learn more about Branches">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="topic" id="account" data-search="account email profile details password settings">
+          <svg class="topic-icon" aria-hidden="true"><use href="#account-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Manage your account</h2>
+            <p>Configure your account settings, such as your email, profile details, and password.</p>
+            <button class="text-link learn-more" type="button" data-topic="account" aria-label="Learn more about managing your account">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="topic" id="organizations" data-search="organizations teams projects people work workspace">
+          <svg class="topic-icon" aria-hidden="true"><use href="#teams-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Manage organizations, teams, and projects</h2>
+            <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+            <button class="text-link learn-more" type="button" data-topic="organizations" aria-label="Learn more about organizations, teams, and projects">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="topic" id="billing" data-search="billing subscriptions payment details invoices plan">
+          <svg class="topic-icon" aria-hidden="true"><use href="#billing-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Manage billing</h2>
+            <p>Change subscriptions and payment details.</p>
+            <button class="text-link learn-more" type="button" data-topic="billing" aria-label="Learn more about billing">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="topic" id="authentication" data-search="authenticate authentication sso scim just-in-time provisioning security login">
+          <svg class="topic-icon" aria-hidden="true"><use href="#key-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Authenticate to Abstract</h2>
+            <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+            <button class="text-link learn-more" type="button" data-topic="authentication" aria-label="Learn more about authentication">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+        <article class="topic" id="support" data-search="support contact human help request question">
+          <svg class="topic-icon" aria-hidden="true"><use href="#support-icon"/></svg>
+          <div class="topic-copy">
+            <h2>Abstract support</h2>
+            <p>Get in touch with a human.</p>
+            <button class="text-link learn-more" type="button" data-topic="support" aria-label="Learn more about Abstract support">Learn More <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" hidden>
+        <h2>No topics found.</h2>
+        <p>Try “account”, “billing”, or “teams”.</p>
+        <button class="text-link" type="button" id="clear-search">Show all topics <span aria-hidden="true">→</span></button>
+      </div>
+      <noscript><p class="noscript-note">JavaScript is needed for search and topic previews.</p></noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-column" aria-labelledby="footer-abstract">
+        <h2 id="footer-abstract">Abstract</h2>
+        <button type="button" data-topic="branches">Branches</button>
+        <button type="button" data-topic="organizations">Teams &amp; projects</button>
+        <button type="button" data-topic="billing">Billing</button>
+      </nav>
+      <nav class="footer-column" aria-labelledby="footer-resources">
+        <h2 id="footer-resources">Resources</h2>
+        <a href="#help-topics" id="browse-topics">Help Center</a>
+        <button type="button" data-action="search">Search for help</button>
+        <button type="button" data-topic="account">Your account</button>
+      </nav>
+      <nav class="footer-column" aria-labelledby="footer-community">
+        <h2 id="footer-community">Community</h2>
+        <button type="button" data-topic="support">Abstract support</button>
+        <button type="button" data-action="request">Submit a request</button>
+      </nav>
+      <div class="footer-column">
+        <h2>Company</h2>
+        <button type="button" data-action="about">About this page</button>
+        <h3>Contact us</h3>
+        <button type="button" data-action="request">Let’s talk <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="footer-signature">
+        <svg class="brand-mark" aria-hidden="true"><use href="#abstract-mark"/></svg>
+        <p>Abstract<br>Help Center</p>
+        <small>HTML &amp; CSS practice · 2026</small>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="help-dialog" id="help-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <button class="dialog-close" type="button" aria-label="Close dialog" autofocus>×</button>
+    <span class="dialog-eyebrow">ABSTRACT / HELP CENTER</span>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

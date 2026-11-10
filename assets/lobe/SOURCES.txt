@@ -1,0 +1,19 @@
+Lobe Tour exercise assets
+
+Poster: original Lobe Tour video thumbnail, retrieved from the archived website.
+https://web.archive.org/web/20221115192806id_/https://www.lobe.ai/assets/tour/Video.jpg
+
+Original tour video by Lobe:
+https://www.youtube.com/watch?v=Mdcw3Sb98DA
+
+Original website archive:
+https://web.archive.org/web/20221115192806/https://www.lobe.ai/tour
+
+The two-square logo and social icons are drawn as inline SVG in lobe.html.
+The poster already includes the central play icon.
+
+Typeface: Archivo, shared local file in fonts/archivo-latin.woff2.
+Its SIL Open Font License is included in fonts/Archivo-OFL.txt.
+
+The original lobe.ai domain now redirects to https://github.com/lobe.
+Download links on this exercise point to that official project archive.
